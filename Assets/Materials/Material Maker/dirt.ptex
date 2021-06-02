@@ -1,0 +1,780 @@
+{
+	"connections": [
+		{
+			"from": "fbm2",
+			"from_port": 0,
+			"to": "colorize",
+			"to_port": 0
+		},
+		{
+			"from": "fbm2",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 1
+		},
+		{
+			"from": "tones_step",
+			"from_port": 0,
+			"to": "blend_3",
+			"to_port": 2
+		},
+		{
+			"from": "colorize_3",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 0
+		},
+		{
+			"from": "colorize",
+			"from_port": 0,
+			"to": "blend",
+			"to_port": 1
+		},
+		{
+			"from": "normal_map",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 4
+		},
+		{
+			"from": "occlusion2",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 5
+		},
+		{
+			"from": "blend_2",
+			"from_port": 0,
+			"to": "tonality_4",
+			"to_port": 0
+		},
+		{
+			"from": "tonality_4",
+			"from_port": 0,
+			"to": "tones_step",
+			"to_port": 0
+		},
+		{
+			"from": "tonality_5",
+			"from_port": 0,
+			"to": "invert",
+			"to_port": 0
+		},
+		{
+			"from": "invert",
+			"from_port": 0,
+			"to": "normal_map",
+			"to_port": 0
+		},
+		{
+			"from": "invert_2",
+			"from_port": 0,
+			"to": "tonality_2",
+			"to_port": 0
+		},
+		{
+			"from": "tonality_2",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 6
+		},
+		{
+			"from": "tonality_2",
+			"from_port": 0,
+			"to": "occlusion2",
+			"to_port": 0
+		},
+		{
+			"from": "blend_3",
+			"from_port": 0,
+			"to": "greyscale",
+			"to_port": 0
+		},
+		{
+			"from": "fbm2_2",
+			"from_port": 0,
+			"to": "tonality",
+			"to_port": 0
+		},
+		{
+			"from": "tonality",
+			"from_port": 0,
+			"to": "colorize_3",
+			"to_port": 0
+		},
+		{
+			"from": "tonality",
+			"from_port": 0,
+			"to": "blend_2",
+			"to_port": 0
+		},
+		{
+			"from": "uniform",
+			"from_port": 0,
+			"to": "blend_3",
+			"to_port": 1
+		},
+		{
+			"from": "greyscale",
+			"from_port": 0,
+			"to": "tonality_3",
+			"to_port": 0
+		},
+		{
+			"from": "tonality_3",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 7
+		},
+		{
+			"from": "greyscale",
+			"from_port": 0,
+			"to": "blend_4",
+			"to_port": 0
+		},
+		{
+			"from": "fbm2_3",
+			"from_port": 0,
+			"to": "blend_4",
+			"to_port": 1
+		},
+		{
+			"from": "blend_4",
+			"from_port": 0,
+			"to": "tonality_5",
+			"to_port": 0
+		},
+		{
+			"from": "blend_4",
+			"from_port": 0,
+			"to": "invert_2",
+			"to_port": 0
+		},
+		{
+			"from": "tones_step_2",
+			"from_port": 0,
+			"to": "blend_4",
+			"to_port": 2
+		},
+		{
+			"from": "tonality_3",
+			"from_port": 0,
+			"to": "tones_step_2",
+			"to_port": 0
+		},
+		{
+			"from": "fbm2_4",
+			"from_port": 0,
+			"to": "tonality_6",
+			"to_port": 0
+		},
+		{
+			"from": "tonality_6",
+			"from_port": 0,
+			"to": "colorize_2",
+			"to_port": 0
+		},
+		{
+			"from": "blend",
+			"from_port": 0,
+			"to": "tones_step_3",
+			"to_port": 0
+		},
+		{
+			"from": "tones_step_3",
+			"from_port": 0,
+			"to": "blend_5",
+			"to_port": 2
+		},
+		{
+			"from": "blend_3",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "blend",
+			"from_port": 0,
+			"to": "blend_5",
+			"to_port": 1
+		},
+		{
+			"from": "colorize_2",
+			"from_port": 0,
+			"to": "blend_5",
+			"to_port": 0
+		},
+		{
+			"from": "blend_5",
+			"from_port": 0,
+			"to": "blend_3",
+			"to_port": 0
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "4376",
+	"node_position": {
+		"x": 0,
+		"y": 0
+	},
+	"nodes": [
+		{
+			"export_paths": {
+				"Unity": "C:/git/runes-pbr/Assets/Materials/dirt02"
+			},
+			"name": "Material",
+			"node_position": {
+				"x": 1337.202515,
+				"y": -563.20636
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1,
+					"b": 1,
+					"g": 1,
+					"r": 1,
+					"type": "Color"
+				},
+				"ao": 1,
+				"depth_scale": 0.5,
+				"emission_energy": 1,
+				"flags_transparent": false,
+				"metallic": 0,
+				"normal": 1,
+				"roughness": 1,
+				"size": 11,
+				"sss": 0
+			},
+			"type": "material"
+		},
+		{
+			"name": "fbm2",
+			"node_position": {
+				"x": -1553.201782,
+				"y": -716.944275
+			},
+			"parameters": {
+				"folds": 0,
+				"iterations": 5,
+				"noise": 0,
+				"persistence": 0.5,
+				"scale_x": 8,
+				"scale_y": 8
+			},
+			"type": "fbm2"
+		},
+		{
+			"name": "colorize",
+			"node_position": {
+				"x": -339,
+				"y": -550
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.205078,
+							"g": 0.40535,
+							"pos": 0,
+							"r": 0.546875
+						},
+						{
+							"a": 1,
+							"b": 0.073242,
+							"g": 0.177383,
+							"pos": 1,
+							"r": 0.390625
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "fbm2_2",
+			"node_position": {
+				"x": -1497.623291,
+				"y": -1137.208374
+			},
+			"parameters": {
+				"folds": 0,
+				"iterations": 5,
+				"noise": 0,
+				"persistence": 0.5,
+				"scale_x": 3,
+				"scale_y": 3
+			},
+			"type": "fbm2"
+		},
+		{
+			"name": "colorize_3",
+			"node_position": {
+				"x": -325,
+				"y": -739.5
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.164673,
+							"g": 0.242135,
+							"pos": 0,
+							"r": 0.296875
+						},
+						{
+							"a": 1,
+							"b": 0.110687,
+							"g": 0.193569,
+							"pos": 0.961042,
+							"r": 0.363281
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "blend_2",
+			"node_position": {
+				"x": -1051.951172,
+				"y": -172.117493
+			},
+			"parameters": {
+				"amount": 0.5,
+				"blend_type": 0
+			},
+			"type": "blend"
+		},
+		{
+			"name": "blend_3",
+			"node_position": {
+				"x": 613.894226,
+				"y": -544.600464
+			},
+			"parameters": {
+				"amount": 1,
+				"blend_type": 0
+			},
+			"type": "blend"
+		},
+		{
+			"name": "tones_step",
+			"node_position": {
+				"x": -544.938477,
+				"y": -189.33963
+			},
+			"parameters": {
+				"invert": false,
+				"value": 0.49,
+				"width": 0.07
+			},
+			"type": "tones_step"
+		},
+		{
+			"name": "blend",
+			"node_position": {
+				"x": -37.033447,
+				"y": -585.407349
+			},
+			"parameters": {
+				"amount": 0.5,
+				"blend_type": 0
+			},
+			"type": "blend"
+		},
+		{
+			"name": "normal_map",
+			"node_position": {
+				"x": 1023.656128,
+				"y": -467.13324
+			},
+			"parameters": {
+				"param0": 10,
+				"param1": 1,
+				"param2": 0,
+				"param4": 1
+			},
+			"type": "normal_map"
+		},
+		{
+			"name": "invert",
+			"node_position": {
+				"x": 850.933777,
+				"y": -389.856628
+			},
+			"parameters": {
+
+			},
+			"type": "invert"
+		},
+		{
+			"name": "occlusion2",
+			"node_position": {
+				"x": 1180.692139,
+				"y": 138.568939
+			},
+			"parameters": {
+				"param0": 11,
+				"param1": 20,
+				"param2": 1.5,
+				"param3": 1
+			},
+			"type": "occlusion2"
+		},
+		{
+			"name": "tonality_2",
+			"node_position": {
+				"x": 847.114014,
+				"y": -155.536285
+			},
+			"parameters": {
+				"curve": {
+					"points": [
+						{
+							"ls": 0,
+							"rs": 1,
+							"x": 0,
+							"y": 0
+						},
+						{
+							"ls": 0,
+							"rs": 1.673114,
+							"x": 0.471098,
+							"y": 0.465184
+						},
+						{
+							"ls": 1.242885,
+							"rs": -0,
+							"x": 1,
+							"y": 1
+						}
+					],
+					"type": "Curve"
+				}
+			},
+			"type": "tonality"
+		},
+		{
+			"name": "tonality_4",
+			"node_position": {
+				"x": -775.257385,
+				"y": -171.336639
+			},
+			"parameters": {
+				"curve": {
+					"points": [
+						{
+							"ls": 0,
+							"rs": 1,
+							"x": 0,
+							"y": 0
+						},
+						{
+							"ls": 0.708613,
+							"rs": 1.495973,
+							"x": 0.469653,
+							"y": 0.528046
+						},
+						{
+							"ls": 1,
+							"rs": 0,
+							"x": 1,
+							"y": 1
+						}
+					],
+					"type": "Curve"
+				}
+			},
+			"type": "tonality"
+		},
+		{
+			"name": "tonality_5",
+			"node_position": {
+				"x": 668.950928,
+				"y": -373.864929
+			},
+			"parameters": {
+				"curve": {
+					"points": [
+						{
+							"ls": 0,
+							"rs": 1,
+							"x": 0,
+							"y": 0
+						},
+						{
+							"ls": 0,
+							"rs": -0,
+							"x": 0.430275,
+							"y": 0.60735
+						},
+						{
+							"ls": 3.397709,
+							"rs": -0,
+							"x": 1,
+							"y": 1
+						}
+					],
+					"type": "Curve"
+				}
+			},
+			"type": "tonality"
+		},
+		{
+			"name": "invert_2",
+			"node_position": {
+				"x": 584.407959,
+				"y": -60.220039
+			},
+			"parameters": {
+
+			},
+			"type": "invert"
+		},
+		{
+			"name": "greyscale",
+			"node_position": {
+				"x": 300.424866,
+				"y": -253.15155
+			},
+			"parameters": {
+				"mode": 0
+			},
+			"type": "greyscale"
+		},
+		{
+			"name": "tonality",
+			"node_position": {
+				"x": -1026.76001,
+				"y": -1089.109985
+			},
+			"parameters": {
+				"curve": {
+					"points": [
+						{
+							"ls": 0,
+							"rs": 1,
+							"x": 0,
+							"y": 0
+						},
+						{
+							"ls": 2.141586,
+							"rs": -0,
+							"x": 1,
+							"y": 1
+						}
+					],
+					"type": "Curve"
+				}
+			},
+			"type": "tonality"
+		},
+		{
+			"name": "uniform",
+			"node_position": {
+				"x": -41.364056,
+				"y": -403.697266
+			},
+			"parameters": {
+				"color": {
+					"a": 1,
+					"b": 0,
+					"g": 0,
+					"r": 0,
+					"type": "Color"
+				}
+			},
+			"type": "uniform"
+		},
+		{
+			"name": "tonality_3",
+			"node_position": {
+				"x": 676.097412,
+				"y": -222.497437
+			},
+			"parameters": {
+				"curve": {
+					"points": [
+						{
+							"ls": 0,
+							"rs": 1,
+							"x": 0,
+							"y": 0
+						},
+						{
+							"ls": 0,
+							"rs": -0,
+							"x": 0.524567,
+							"y": 1
+						},
+						{
+							"ls": -1.011304,
+							"rs": -0,
+							"x": 1,
+							"y": 1
+						}
+					],
+					"type": "Curve"
+				}
+			},
+			"type": "tonality"
+		},
+		{
+			"name": "fbm2_3",
+			"node_position": {
+				"x": -291.361877,
+				"y": 115.866768
+			},
+			"parameters": {
+				"folds": 0,
+				"iterations": 8,
+				"noise": 0,
+				"persistence": 0.5,
+				"scale_x": 3,
+				"scale_y": 3
+			},
+			"type": "fbm2"
+		},
+		{
+			"name": "blend_4",
+			"node_position": {
+				"x": 271.594482,
+				"y": -10.334154
+			},
+			"parameters": {
+				"amount": 1,
+				"blend_type": 0
+			},
+			"type": "blend"
+		},
+		{
+			"name": "tones_step_2",
+			"node_position": {
+				"x": -63.166527,
+				"y": -57.544041
+			},
+			"parameters": {
+				"invert": true,
+				"value": 0.5,
+				"width": 0.1
+			},
+			"type": "tones_step"
+		},
+		{
+			"name": "blend_5",
+			"node_position": {
+				"x": 334.89856,
+				"y": -757.41626
+			},
+			"parameters": {
+				"amount": 0.38,
+				"blend_type": 2
+			},
+			"type": "blend"
+		},
+		{
+			"name": "fbm2_4",
+			"node_position": {
+				"x": -247.370972,
+				"y": -1160.180664
+			},
+			"parameters": {
+				"folds": 0,
+				"iterations": 5,
+				"noise": 0,
+				"persistence": 0.5,
+				"scale_x": 15,
+				"scale_y": 15
+			},
+			"type": "fbm2"
+		},
+		{
+			"name": "tonality_6",
+			"node_position": {
+				"x": 14.0859,
+				"y": -1114.709351
+			},
+			"parameters": {
+				"curve": {
+					"points": [
+						{
+							"ls": 0,
+							"rs": 1,
+							"x": 0,
+							"y": 0
+						},
+						{
+							"ls": -1.581853,
+							"rs": -2.953912,
+							"x": 0.541185,
+							"y": 0.634429
+						},
+						{
+							"ls": 0.360363,
+							"rs": -0,
+							"x": 1,
+							"y": 1
+						}
+					],
+					"type": "Curve"
+				}
+			},
+			"type": "tonality"
+		},
+		{
+			"name": "colorize_2",
+			"node_position": {
+				"x": 301.637024,
+				"y": -1125.073975
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0,
+							"g": 0,
+							"pos": 0,
+							"r": 0
+						},
+						{
+							"a": 1,
+							"b": 1,
+							"g": 1,
+							"pos": 1,
+							"r": 1
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"type": "colorize"
+		},
+		{
+			"name": "tones_step_3",
+			"node_position": {
+				"x": 14.0859,
+				"y": -873.295044
+			},
+			"parameters": {
+				"invert": true,
+				"value": 0.5,
+				"width": 0.1
+			},
+			"type": "tones_step"
+		}
+	],
+	"parameters": {
+
+	},
+	"shortdesc": "",
+	"type": "graph"
+}
